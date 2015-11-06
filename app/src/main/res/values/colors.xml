@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#015488</color>
+    <color name="alimentation_category">#9FC5F8</color>
+    <color name="fuel_category">#FF5CCFF8</color>
+    <color name="transport_category">#0099CC</color>
+    <color name="acommodation_category">#6FA8DC</color>
+    <color name="othes_category">#ACBFD5</color>
+</resources>

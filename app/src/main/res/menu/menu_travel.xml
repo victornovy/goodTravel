@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnuNewTravel"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/new_register" />
+    <!-- menu group -->
+    <group android:id="@+id/mngDelete">
+        <item
+            android:id="@+id/mnuDeleteTravel"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:title="@string/delete" />
+        <item
+            android:id="@+id/mnuArchiveTravel"
+            android:title="@string/archive" />
+    </group>
+</menu>

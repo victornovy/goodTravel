@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#015488"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_travel"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/destiny" />
+
+        <EditText
+            android:id="@+id/txtDestiny"
+            android:inputType="text" >
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:text="@string/travel_type" />
+
+        <RadioGroup
+            android:id="@+id/rdgTravelType"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/rdbRelax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relax"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rdbWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work"
+                    android:layout_marginLeft="40dp" />
+        </RadioGroup>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/date_go_out" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="@string/date_go_back" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnSelectDateOut"
+                android:text="@string/select_date"
+                android:onClick="selectDate" />
+
+            <Button
+                android:id="@+id/btnSelectDateBack"
+                android:text="@string/select_date"
+                android:onClick="selectDate" />
+
+        </TableRow>
+
+        <TextView
+            android:text="@string/budget" />
+
+        <EditText
+            android:id="@+id/txtBudget"
+            android:inputType="numberDecimal"/>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/how_many_people" />
+
+            <EditText
+                android:id="@+id/txtHowManyPeople"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnSaveTravel"
+            android:onClick="saveTravel"
+            android:text="@string/save" />
+
+    </TableLayout>
+</ScrollView>
